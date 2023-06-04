@@ -415,6 +415,7 @@ footer .company a,
 .company_right_wrap {
   position: relative;
 }
+
 .company_right {
   height: 435px;
   width: 518px;
@@ -623,5 +624,43 @@ footer .company a,
   .text-title {
     font-size: 50px;
     line-height: 36px;
+  }
+
+  .company_info {
+    padding-right: 60px;
+  }
+
+  .company_right_wrap {
+    padding-top: 40px;
+  }
+
+  .company_right_wrap .top_right {
+    width: 250px;
+    height: 300px;
+    top: -150px;
+    right: 0px;
+  }
+
+  .company_right_wrap .left_bottom {
+    width: 150px;
+    height: 140px;
+    bottom: -108px;
+    left: -43px;
+  }
+
+  .company_right {
+    height: 274px;
+    width: 100%;
+  }
+
+  .about_wrap {
+    padding: 100px 0px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .company_right_wrap .top_right {
+    width: 350px;
+    height: 400px;
   }
 }
