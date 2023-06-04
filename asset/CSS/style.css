@@ -63,7 +63,7 @@ a {
 
 .header-wrap .logo {
   width: 195px;
-  height: 44px;
+  height: 47px;
 }
 
 .header-wrap nav ul {
@@ -139,6 +139,9 @@ a {
   justify-content: center;
   gap: 10px;
 }
+.try_free_btn i {
+  font-size: 15px;
+}
 
 .learn_more_btn {
   color: var(--secondary);
@@ -175,10 +178,11 @@ a {
   margin-bottom: 80px;
 }
 
-.Card image {
+.Card img {
   width: 76px;
   height: 76px;
 }
+
 .Card h1 {
   font-size: 32px;
   font-weight: 500;
@@ -346,6 +350,11 @@ footer .company a,
   color: var(--primary);
 }
 
+.price_calculation input::placeholder {
+  font-size: 19px;
+  font-weight: 300;
+}
+
 .price_calculation button {
   padding: 12px 30px;
   font-weight: 300;
@@ -372,4 +381,62 @@ footer .company a,
 }
 .pricing_btn i {
   font-size: 14px;
+}
+
+.knowledge_card {
+  padding-top: 188px;
+  padding-bottom: 120px;
+  color: var(--primary);
+  background: var(--secondary);
+}
+
+.knowledge_card .pentested {
+  width: 300px;
+  height: 300px;
+}
+
+/* /about_wrap */
+.about_wrap {
+  background: var(--secondary);
+  padding: 160px 0px;
+}
+
+.company_info {
+  padding-right: 120px;
+}
+.company_info p {
+  font-weight: 300;
+  color: var(--primary);
+}
+
+.company_right_wrap {
+  position: relative;
+}
+.company_right {
+  height: 435px;
+  width: 518px;
+  margin-left: auto;
+  background: #f7f7f7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 2;
+  position: relative;
+}
+
+.company_right_wrap .top_right {
+  position: absolute;
+  width: 466px;
+  height: 506px;
+  top: -250px;
+  right: -147px;
+  z-index: 1;
+}
+
+.company_right_wrap .left_bottom {
+  width: 265.36px;
+  height: 199px;
+  position: absolute;
+  bottom: -152px;
+  left: -43px;
+  z-index: 3;
 }
