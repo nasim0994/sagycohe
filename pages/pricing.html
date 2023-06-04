@@ -31,15 +31,45 @@
             </a>
           </div>
           <div class="col-9">
-            <nav>
+            <nav class="d-none d-lg-block">
               <ul>
                 <li><a href="./ProductFeatures.html">Product Features</a></li>
-                <li><a href="">Pricing</a></li>
+                <li><a href="./pricing.html">Pricing</a></li>
                 <li><a href="./about.html">About</a></li>
-                <li><a href="">Contact Us</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
               </ul>
             </nav>
+
+            <button class="d-lg-none mobileMenu_btn">
+              <img src="../asset/Images/mobileMenu.png" alt="" />
+            </button>
           </div>
+        </div>
+      </div>
+
+      <!-- mobile menu -->
+      <div class="mobile_menu d-lg-none">
+        <div class="d-flex justify-content-between align-items-center">
+          <a href="../index.html" class="d-inline-block">
+            <img
+              src="../asset/Images/logoWhite.png"
+              alt="Academica logo"
+              class="logo"
+            />
+          </a>
+
+          <button class="close_btn">
+            <img src="../asset/Images/close_menu.png" alt="" />
+          </button>
+        </div>
+
+        <div class="mobile_menu_lists">
+          <ul>
+            <li><a href="./ProductFeatures.html">Product Features</a></li>
+            <li><a href="./pricing.html">Pricing</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+          </ul>
         </div>
       </div>
     </header>
@@ -53,12 +83,16 @@
           <div class="col">
             <div class="hero_content">
               <h1 class="text-title">Pricing</h1>
-              <p class="w-50">
-                Our pricing plan at Academica is designed to be flexible and
-                tailored to the specific needs of our clients, ensuring that
-                they receive exceptional value for their investment in our
-                eLearning solutions.
-              </p>
+              <div class="row">
+                <div class="col-md-6">
+                  <p>
+                    Our pricing plan at Academica is designed to be flexible and
+                    tailored to the specific needs of our clients, ensuring that
+                    they receive exceptional value for their investment in our
+                    eLearning solutions.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -76,6 +110,12 @@
               </div>
 
               <div class="price_calculation_area">
+                <p class="text-center">
+                  The calculated price is for 1 year license based on the exact
+                  numbers of users. See for more plans for discounts of extended
+                  licenses.
+                </p>
+
                 <div class="price_calculation">
                   <p>Your price for</p>
                   <input type="text" value="250" />
@@ -140,7 +180,10 @@
               </a>
             </div>
           </div>
-          <div class="col-md-4 d-flex justify-content-end">
+
+          <div
+            class="col-md-4 d-flex justify-content-center justify-content-lg-end align-items-center mt-5 mt-lg-0 pt-5 pt-lg-0"
+          >
             <img src="../asset/Images/mask.png" alt="" class="pentested" />
           </div>
         </div>
@@ -152,18 +195,8 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <div class="brand">
+            <div class="brand pb-5 pb-lg-0">
               <img src="../asset/Images/footerlogo.png" alt="" />
-
-              <div class="d-flex gap-5">
-                <p style="color: #828282">
-                  © 2023 Academica. All rights reserved.
-                </p>
-                <div class="d-flex gap-4">
-                  <a href="">Privacy</a>
-                  <a href="">Terms</a>
-                </div>
-              </div>
             </div>
           </div>
           <div class="col-md-3 company">
@@ -195,8 +228,25 @@
             </ul>
           </div>
         </div>
+
+        <div class="row bottom_footer">
+          <div class="col">
+            <div class="d-flex flex-column-reverse flex-md-row gap-3 gap-md-5">
+              <p style="color: #828282">
+                © 2023 Academica. All rights reserved.
+              </p>
+
+              <div class="d-flex gap-4">
+                <a href="">Privacy</a>
+                <a href="">Terms</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
+
+    <script src="../asset/script/script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>

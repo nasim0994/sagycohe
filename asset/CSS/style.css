@@ -329,7 +329,7 @@ footer .company a,
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 150px;
+  padding-top: 100px;
 }
 .price_calculation {
   display: flex;
@@ -655,6 +655,30 @@ footer .company a,
 
   .about_wrap {
     padding: 100px 0px;
+  }
+
+  .pricing_hero img {
+    height: auto;
+    width: 113px;
+  }
+
+  .pricing_card {
+    height: auto;
+    top: -480px;
+    padding-bottom: 36px;
+  }
+
+  .price_calculation {
+    flex-direction: column;
+  }
+
+  .knowledge_card {
+    padding-top: 250px;
+  }
+
+  .knowledge_card .pentested {
+    width: 220px;
+    height: 220px;
   }
 }
 
