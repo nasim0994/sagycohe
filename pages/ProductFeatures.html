@@ -31,15 +31,45 @@
             </a>
           </div>
           <div class="col-9">
-            <nav>
+            <nav class="d-none d-lg-block">
               <ul>
-                <li><a href="">Product Features</a></li>
+                <li><a href="./ProductFeatures.html">Product Features</a></li>
                 <li><a href="./pricing.html">Pricing</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact Us</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
               </ul>
             </nav>
+
+            <button class="d-lg-none mobileMenu_btn">
+              <img src="../asset/Images/mobileMenu.png" alt="" />
+            </button>
           </div>
+        </div>
+      </div>
+
+      <!-- mobile menu -->
+      <div class="mobile_menu d-lg-none">
+        <div class="d-flex justify-content-between align-items-center">
+          <a href="../index.html" class="d-inline-block">
+            <img
+              src="../asset/Images/logoWhite.png"
+              alt="Academica logo"
+              class="logo"
+            />
+          </a>
+
+          <button class="close_btn">
+            <img src="../asset/Images/close_menu.png" alt="" />
+          </button>
+        </div>
+
+        <div class="mobile_menu_lists">
+          <ul>
+            <li><a href="./ProductFeatures.html">Product Features</a></li>
+            <li><a href="./pricing.html">Pricing</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+          </ul>
         </div>
       </div>
     </header>
@@ -53,11 +83,15 @@
           <div class="col">
             <div class="hero_content">
               <h1 class="text-title">Product Features</h1>
-              <p class="w-50">
-                We offer custom content design and development solutions to help
-                you quickly get up to speed with your LMS and deliver meaningful
-                eLearning faster
-              </p>
+              <div class="row">
+                <div class="col-md-6">
+                  <p>
+                    We offer custom content design and development solutions to
+                    help you quickly get up to speed with your LMS and deliver
+                    meaningful eLearning faster
+                  </p>
+                </div>
+              </div>
 
               <div class="d-flex gap-4">
                 <a href="" class="try_free_btn">
@@ -72,52 +106,82 @@
     </section>
 
     <!--  -->
-    <section class="services" style="padding-top: 190px; padding-bottom: 160px">
+    <section class="services feature_services">
       <div class="container">
-        <div class="position-relative">
-          <div class="row relative align-items-center">
+        <div class="service_card">
+          <div class="row align-items-center">
             <div class="col-md-6">
-              <div
-                style="
-                  width: 626px;
-                  height: 400px;
-                  background-color: #f7f7f7;
-                  border-radius: 8px;
-                "
-              >
-                <img
-                  src="../asset/Images/path1.png"
-                  alt=""
-                  style="
-                    position: absolute;
-                    top: -31px;
-                    left: -43px;
-                    width: 43px;
-                  "
-                />
+              <div class="service_box">
+                <img src="../asset/Images/path1.png" alt="" class="top_left" />
               </div>
             </div>
 
-            <div class="col-md-6" style="padding: 53px">
-              <h1 class="text-primary text-title" style="font-size: 60px">
-                User management
-              </h1>
-              <p style="margin-top: 40px">
-                User profiles let you see all data in one convenient page.
-                 There is a quick overview of the user’s learning progress as
-                well as management details like the groups they are assigned in.
+            <div class="col-md-6 service_content">
+              <h1 class="text-primary text-title2">Design</h1>
+              <p>
+                We work closely with your subject matter experts to identify
+                your learning needs, define objectives and ensure your content
+                meets our system functionality. We structure your content,
+                trainee activities and assessments into a meaningful learning
+                experience that facilitates understanding. Our system gives your
+                raining character and elegance top notch, UX, UI, graphic,
+                multimedia and game design.
               </p>
             </div>
           </div>
         </div>
 
-        <div style="margin-top: 120px" class="position-relative">
-          <div class="row relative align-items-center">
-            <div class="col-md-6" style="padding: 53px">
-              <h1 class="text-primary text-title" style="font-size: 60px">
-                Rich content
-              </h1>
-              <p style="margin-top: 40px">
+        <div class="service_card">
+          <div class="row flex-column-reverse flex-lg-row align-items-center">
+            <div class="col-md-6 service_content">
+              <h1 class="text-primary text-title2">Development</h1>
+              <p>
+                We build interactive, optimized and compatible eLearning
+                solutions. We comply with SCORM, AICC and IMS industry standards
+                and easily integrate with Academica Learning, as well as other
+                learning management systems. A dedicated team of QA engineers
+                performs end to end testing: from business logic analysis and
+                acceptance testing, through functional and usability testing, to
+                heuristic evaluation.
+              </p>
+            </div>
+
+            <div class="col-md-6">
+              <div class="service_box">
+                <img
+                  src="../asset/Images/path2.png"
+                  alt=""
+                  class="bottom_left"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="service_card">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="service_box">
+                <img src="./asset/Images/path1.png" alt="" />
+              </div>
+            </div>
+
+            <div class="col-md-6 service_content">
+              <h1 class="text-primary text-title2">User management</h1>
+              <p>
+                User profiles let you see all data in one convenient page. There
+                is a quick overview of the user’s learning progress as well as
+                management details like the groups they are assigned in.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="service_card">
+          <div class="row flex-column-reverse flex-lg-row align-items-center">
+            <div class="col-md-6 service_content">
+              <h1 class="text-primary text-title2">Rich content</h1>
+              <p>
                 Upload your SCORM eCourses, PDF or MS Office documents and make
                 them a part of any training. Upload your video file or embed
                 videos from YouTube and Vimeo. Manage the way users see them and
@@ -126,157 +190,57 @@
             </div>
 
             <div class="col-md-6">
-              <div
-                style="
-                  width: 626px;
-                  height: 400px;
-                  background-color: #f7f7f7;
-                  border-radius: 8px;
-                "
-                class="position-relative"
-              >
-                <img
-                  src="../asset/Images/path2.png"
-                  alt=""
-                  style="
-                    position: absolute;
-                    width: 43px;
-                    bottom: -30px;
-                    left: -40px;
-                  "
-                />
+              <div class="service_box">
+                <img src="./asset/Images/path2.png" alt="" />
               </div>
             </div>
           </div>
         </div>
 
-        <div style="margin-top: 120px">
-          <div class="row relative align-items-center">
+        <div class="service_card">
+          <div class="row align-items-center">
             <div class="col-md-6">
-              <div
-                style="
-                  width: 626px;
-                  height: 400px;
-                  background-color: #f7f7f7;
-                  border-radius: 8px;
-                "
-              ></div>
-            </div>
-            <div class="col-md-6" style="padding: 53px">
-              <h1 class="text-primary text-title" style="font-size: 60px">
-                Curriculum
-              </h1>
-              <p style="margin-top: 40px">
-                Combine users and content into trainings. Then define at what
-                point in time the training process will occur by creating
-                schedules. Every stage of this process is simplified for fast
-                handling, but can be tweaked in many ways to accommodate
-                different learning styles and specific needs.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div style="margin-top: 120px">
-          <div class="row relative align-items-center">
-            <div class="col-md-6" style="padding: 53px">
-              <h1 class="text-primary text-title" style="font-size: 60px">
-                Simplified
-              </h1>
-              <p style="margin-top: 40px">
-                All commands are packed into an always visible menu bar for
-                intuitive and quick management. Fewer clicks required thanks to
-                the auto-save of all changes. Communication with the user is
-                better thanks to the meaningful notifications and warnings.
-              </p>
-            </div>
-
-            <div class="col-md-6">
-              <div
-                style="
-                  width: 626px;
-                  height: 400px;
-                  background-color: #f7f7f7;
-                  border-radius: 8px;
-                "
-              ></div>
-            </div>
-          </div>
-        </div>
-
-        <div style="margin-top: 190px" class="position-relative">
-          <div class="row relative align-items-center">
-            <div class="col-md-6">
-              <div
-                style="
-                  width: 626px;
-                  height: 400px;
-                  background-color: #f7f7f7;
-                  border-radius: 8px;
-                "
-              >
-                <img
-                  src="../asset/Images/path1.png"
-                  alt=""
-                  style="
-                    position: absolute;
-                    top: -31px;
-                    left: -43px;
-                    width: 43px;
-                  "
-                />
+              <div class="service_box">
+                <img src="../asset/Images/path1.png" alt="" class="top_left" />
               </div>
             </div>
 
-            <div class="col-md-6" style="padding: 53px">
-              <h1 class="text-primary text-title" style="font-size: 60px">
-                Automated emailing
-              </h1>
-              <p style="margin-top: 40px">
-                Set custom or template emails and have them sent automatically
-                at any interval you need. The system takes care of the rest.
+            <div class="col-md-6 service_content">
+              <h1 class="text-primary text-title2">Design</h1>
+              <p>
+                We work closely with your subject matter experts to identify
+                your learning needs, define objectives and ensure your content
+                meets our system functionality. We structure your content,
+                trainee activities and assessments into a meaningful learning
+                experience that facilitates understanding. Our system gives your
+                raining character and elegance top notch, UX, UI, graphic,
+                multimedia and game design.
               </p>
             </div>
           </div>
         </div>
 
-        <div style="margin-top: 120px" class="position-relative">
-          <div class="row relative align-items-center">
-            <div class="col-md-6" style="padding: 53px">
-              <h1 class="text-primary text-title" style="font-size: 60px">
-                Support
-              </h1>
-              <p style="margin-top: 40px">
-                After system deployment, we offer continuous maintenance,
-                support and upgrades within the scope of the enterprise
-                licensing agreement. For mission critical installations, we
-                offer priority and 24/7 support at an additional fee. Our
-                technical team can also provide full service in running,
-                administering, managing, and configuring your Melon Learning
-                installation. Please contact us if you have an enquiry regarding
-                SLA parameters and various support options.
+        <div class="service_card">
+          <div class="row flex-column-reverse flex-lg-row align-items-center">
+            <div class="col-md-6 service_content">
+              <h1 class="text-primary text-title2">Development</h1>
+              <p>
+                We build interactive, optimized and compatible eLearning
+                solutions. We comply with SCORM, AICC and IMS industry standards
+                and easily integrate with Academica Learning, as well as other
+                learning management systems. A dedicated team of QA engineers
+                performs end to end testing: from business logic analysis and
+                acceptance testing, through functional and usability testing, to
+                heuristic evaluation.
               </p>
             </div>
 
             <div class="col-md-6">
-              <div
-                style="
-                  width: 626px;
-                  height: 400px;
-                  background-color: #f7f7f7;
-                  border-radius: 8px;
-                "
-                class="position-relative"
-              >
+              <div class="service_box">
                 <img
                   src="../asset/Images/path2.png"
                   alt=""
-                  style="
-                    position: absolute;
-                    width: 43px;
-                    bottom: -30px;
-                    left: -40px;
-                  "
+                  class="bottom_left"
                 />
               </div>
             </div>
@@ -290,18 +254,8 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <div class="brand">
+            <div class="brand pb-5 pb-lg-0">
               <img src="../asset/Images/footerlogo.png" alt="" />
-
-              <div class="d-flex gap-5">
-                <p style="color: #828282">
-                  © 2023 Academica. All rights reserved.
-                </p>
-                <div class="d-flex gap-4">
-                  <a href="">Privacy</a>
-                  <a href="">Terms</a>
-                </div>
-              </div>
             </div>
           </div>
           <div class="col-md-3 company">
@@ -333,8 +287,25 @@
             </ul>
           </div>
         </div>
+
+        <div class="row bottom_footer">
+          <div class="col">
+            <div class="d-flex flex-column-reverse flex-md-row gap-3 gap-md-5">
+              <p style="color: #828282">
+                © 2023 Academica. All rights reserved.
+              </p>
+
+              <div class="d-flex gap-4">
+                <a href="">Privacy</a>
+                <a href="">Terms</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
+
+    <script src="../asset/script/script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
