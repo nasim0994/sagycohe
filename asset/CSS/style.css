@@ -541,19 +541,20 @@ footer .company a,
 .contact_wrap form {
   margin-top: 80px;
 }
-.contact_wrap form .form-control {
+
+form .form-control {
   margin-bottom: 32px;
   background: transparent;
   border: none;
 }
-.contact_wrap form .form-control label {
+form .form-control label {
   font-weight: 300;
   font-size: 20px;
   line-height: 28px;
   color: var(--secondary);
 }
 
-.contact_wrap form .form-control input {
+form .form-control input {
   margin-top: 12px;
   width: 100%;
   background: transparent;
@@ -563,7 +564,7 @@ footer .company a,
   padding-bottom: 12px;
   color: var(--secondary);
 }
-.contact_wrap form .form-control input::placeholder {
+form .form-control input::placeholder {
   color: #828282;
   font-weight: 300;
 }
@@ -617,7 +618,24 @@ footer .company a,
   width: 24px;
   height: 12px;
 }
-@media (max-width: 992px) {
+
+.more_question_wrap {
+  padding: 40px 0px 120px 0px;
+  background: var(--secondary);
+}
+
+.more_question {
+  background: var(--primary);
+  color: var(--secondary);
+  border-radius: 40px;
+  padding: 73px 80px;
+  position: relative;
+}
+
+.more_question_icon {
+  position: absolute;
+  top: 20px;
+  left: 0;
 }
 
 /*--------------------- Responsive --------------------------------*/
@@ -832,6 +850,10 @@ footer .company a,
   .knowledge_card .pentested {
     width: 220px;
     height: 220px;
+  }
+
+  .more_question_wrap {
+    padding: 40px 0px;
   }
 }
 
