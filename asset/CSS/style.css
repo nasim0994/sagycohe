@@ -583,6 +583,23 @@ footer .company a,
   height: 275px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing_offer_card h4 {
+  color: var(--primary);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.pricing_offer_card p {
+  font-weight: 300;
+  color: var(--primary);
+  padding: 5px 30px;
 }
 
 /* ----------------- */
@@ -942,6 +959,10 @@ form .form-control input::placeholder {
     height: auto;
     top: -480px;
     padding-bottom: 36px;
+  }
+
+  .pricing_card.pricing2_card {
+    height: 650px;
   }
 
   .price_calculation {
